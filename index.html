@@ -3,6 +3,13 @@
 <head>
   <title>Protesta collettiva per divise scolastiche - IC Aradeo/Neviano "Ezio Bosso"</title>
   <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
     h1 {
       font-size: 24px;
     }
@@ -14,6 +21,11 @@
     p {
       font-size: 16px;
     }
+    
+    .center {
+      display: flex;
+      justify-content: center;
+    }
   </style>
 </head>
 <body>
@@ -21,6 +33,12 @@
   <h2>Raccolta firme</h2>
   
   <p>Firme raccolte: <span id="counter">0</span></p>
+  
+  <div class="center">
+    <img src="school_uniform.png" alt="School Uniform">
+  </div>
+
+  <p>Il valore del contatore sarà aggiornato ogni giorno alle 20:00.</p>
   
   <script>
     // Funzione per incrementare il contatore
